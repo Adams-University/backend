@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: adam-verify-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://adams-university.github.io
